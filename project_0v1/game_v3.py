@@ -4,7 +4,7 @@
 import numpy as np
 
 
-def predict(left=1, right=101):
+def predict(left=1, right=101) -> int:
     """Угадываем число меньше чем за 20 попыток"""
     number = np.random.randint(1, 101)  # компьютер загадывает случайное число
     count = 0
@@ -21,7 +21,7 @@ def predict(left=1, right=101):
     return count
 
 
-def score_game(predict):
+def score_game(predict) -> int:
     '''За какое количество попыток в среднем за 1000 подходов угадывает наш алгоритм'''
     count_ls = []
     np.random.seed(1)  # фиксируем сид для воспроизводимости
@@ -34,7 +34,8 @@ def score_game(predict):
     print("Ваш алгоритм угадывает число в среднем за:{} попыток".format(score))
     return score
 
-
-score_game(predict)
+#RUN
+if __name__ == '__main__':
+    score_game(predict)
 
 
