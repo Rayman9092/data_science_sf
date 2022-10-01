@@ -1,0 +1,1 @@
+ссылка для скачивания датасета https://drive.google.com/file/d/1Y_qC7-B2YxaqbtyWT7l1unttj_BwRiQ3/view?usp=sharing
